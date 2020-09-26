@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="generator" content="Jekyll v4.1.1" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Web development</title>
+		<link rel="stylesheet" href="/assets/main.css">
+	</head>
+	<body>
+		
+		<div class="topnavbar">
+			<nav>
+				{% for item in site.data.topnav %}
+					<a class="topnavbar" href="{{ item.url }}">{{ item.name }}</a>
+				{% endfor %}
+			</nav>
+	</body>
+	<div class="content"><section>
+		{{ content }}
+	</section></div>
+</html>

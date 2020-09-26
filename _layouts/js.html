@@ -1,0 +1,14 @@
+---
+layout: default
+---
+<div class="sidenavbar">
+	<ul>
+		{% for item in site.data.jsnav %}
+			<li><a {% if page.url == item.url %}class="active"{% endif %} href="{{ item.url }}">{{ item.name }}</a></li>
+		{% endfor %}
+	</ul>
+</div>
+<section>
+	<h2>Javascript>>>{{ page.title }}</h2>
+	<p>{{ content }}</p>
+</section>
